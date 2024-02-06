@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   get("/square/results", { :controller => "omni", :action => "sq_result" })
   get("/square/new", { :controller => "omni", :action => "sq" })
 
-  get("/squarert", { :controller => "omni", :action => "sqrt" })
-  get("/squarert/results", { :controller => "omni", :action => "sq_result" })
+  get("/square_root/new", { :controller => "omni", :action => "sqrt" })
+  get("/square_root/results", { :controller => "omni", :action => "sqrt_result" })
 
-  get("/payment", { :controller => "omni", :action => "payment" })
+  get("/payment/new", { :controller => "omni", :action => "payment" })
   get("/payment/results", { :controller => "omni", :action => "pay_result" })
 
-  get("/", { :controller => "omni", :action => "random" })
+  get("/random/new", { :controller => "omni", :action => "random" })
   get("/random/results", { :controller => "omni", :action => "rand_result" })
 end
